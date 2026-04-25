@@ -1,5 +1,5 @@
 // ==========================
-// DATA COMPLETA (TODOS LOS EVENTOS)
+// DATA COMPLETA (EVENTOS)
 // ==========================
 const eventos = [
   {
@@ -12,7 +12,6 @@ const eventos = [
     priceFrom: 120.00,
     currency: "COP",
     stock: 850,
-    soldOut: false,
     popularity: 87,
     images: ["image1.jpg"],
     description: "Un repertorio de música clásica con obras de Beethoven y Mozart."
@@ -27,7 +26,6 @@ const eventos = [
     priceFrom: 150.00,
     currency: "PEN",
     stock: 30000,
-    soldOut: false,
     popularity: 95,
     images: ["image2.jpg"],
     description: "Un festival de música urbana con artistas internacionales y nacionales."
@@ -42,7 +40,6 @@ const eventos = [
     priceFrom: 45.00,
     currency: "ARS",
     stock: 400,
-    soldOut: false,
     popularity: 78,
     images: ["image3.jpg"],
     description: "Una noche de comedia con risas garantizadas."
@@ -57,7 +54,6 @@ const eventos = [
     priceFrom: 60.00,
     currency: "MXN",
     stock: 600,
-    soldOut: false,
     popularity: 82,
     images: ["image4.jpg"],
     description: "Adaptación moderna de la clásica obra de Lorca."
@@ -72,7 +68,6 @@ const eventos = [
     priceFrom: 0,
     currency: "COP",
     stock: 50000,
-    soldOut: false,
     popularity: 98,
     images: ["image5.jpg"],
     description: "El festival gratuito más grande de rock en Latinoamérica."
@@ -87,7 +82,6 @@ const eventos = [
     priceFrom: 200.00,
     currency: "CLP",
     stock: 1200,
-    soldOut: false,
     popularity: 90,
     images: ["image6.jpg"],
     description: "Una de las obras maestras del ballet clásico."
@@ -102,7 +96,6 @@ const eventos = [
     priceFrom: 100.00,
     currency: "USD",
     stock: 2500,
-    soldOut: false,
     popularity: 85,
     images: ["image7.jpg"],
     description: "Una cumbre sobre innovación tecnológica y futuro digital."
@@ -117,7 +110,6 @@ const eventos = [
     priceFrom: 75.00,
     currency: "COP",
     stock: 2000,
-    soldOut: false,
     popularity: 70,
     images: ["image8.jpg"],
     description: "Un festival de jazz frente al mar Caribe."
@@ -132,7 +124,6 @@ const eventos = [
     priceFrom: 0,
     currency: "COP",
     stock: 1500,
-    soldOut: false,
     popularity: 65,
     images: ["image9.jpg"],
     description: "Proyección gratuita de películas clásicas bajo las estrellas."
@@ -146,7 +137,7 @@ const grid = document.querySelector(".catalog-grid");
 const modal = document.getElementById("movieModal");
 
 // ==========================
-// RENDER CARDS
+// RENDER EVENTOS
 // ==========================
 function renderEventos(lista) {
   grid.innerHTML = "";
@@ -173,6 +164,7 @@ function renderEventos(lista) {
       </div>
     `;
 
+    // abrir modal
     card.querySelector(".btn-detalle").addEventListener("click", (e) => {
       e.stopPropagation();
       abrirModal(evento);
@@ -183,7 +175,7 @@ function renderEventos(lista) {
 }
 
 // ==========================
-// MODAL COMPLETO
+// MODAL
 // ==========================
 function abrirModal(evento) {
   modal.innerHTML = `
@@ -203,7 +195,7 @@ function abrirModal(evento) {
           <p>${evento.description}</p>
         </div>
 
-        <!-- DERECHA (COMPRA) -->
+        <!-- DERECHA -->
         <div class="modal-right">
           <h3>Entradas</h3>
 
@@ -224,11 +216,12 @@ function abrirModal(evento) {
 
   modal.classList.remove("hidden");
 
-  // cerrar modal
+  // cerrar botón X
   modal.querySelector(".close-btn").addEventListener("click", () => {
     modal.classList.add("hidden");
   });
 
+  // cerrar haciendo click afuera
   modal.addEventListener("click", (e) => {
     if (e.target === modal) modal.classList.add("hidden");
   });
@@ -252,4 +245,6 @@ function ordenarPorPopularidad() {
 // ==========================
 // INIT
 // ==========================
-renderEventos(eventos);
+document.addEventListener("DOMContentLoaded", () => {
+  renderEventos(eventos);
+});
