@@ -1,6 +1,4 @@
-// ==========================
-// DATA COMPLETA (TODOS LOS EVENTOS)
-// ==========================
+
 const eventos = [
   {
     id: "evt-0002",
@@ -139,15 +137,11 @@ const eventos = [
   }
 ];
 
-// ==========================
-// DOM
-// ==========================
+
 const grid = document.querySelector(".catalog-grid");
 const modal = document.getElementById("movieModal");
 
-// ==========================
-// RENDER CARDS
-// ==========================
+
 function renderEventos(lista) {
   grid.innerHTML = "";
 
@@ -182,9 +176,7 @@ function renderEventos(lista) {
   });
 }
 
-// ==========================
-// MODAL COMPLETO
-// ==========================
+
 function abrirModal(evento) {
   modal.innerHTML = `
     <div class="modal-content">
@@ -224,7 +216,7 @@ function abrirModal(evento) {
 
   modal.classList.remove("hidden");
 
-  // cerrar modal
+
   modal.querySelector(".close-btn").addEventListener("click", () => {
     modal.classList.add("hidden");
   });
@@ -234,9 +226,7 @@ function abrirModal(evento) {
   });
 }
 
-// ==========================
-// FUNCIONES EXTRA
-// ==========================
+
 function filtrarPorCiudad(ciudad) {
   return eventos.filter(e => e.city.toLowerCase() === ciudad.toLowerCase());
 }
@@ -249,7 +239,4 @@ function ordenarPorPopularidad() {
   return [...eventos].sort((a, b) => b.popularity - a.popularity);
 }
 
-// ==========================
-// INIT
-// ==========================
 renderEventos(eventos);
