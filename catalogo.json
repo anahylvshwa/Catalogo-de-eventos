@@ -33,7 +33,7 @@
     "stock": 30000,
     "soldOut": false,
     "popularity": 95,
-    "images": ["/assets/evt-0003/cover.jpg"],
+    "images": ["image2.jpg"],
     "policies": {
       "age": "18+",
       "refund": "No reembolsable"
@@ -53,7 +53,7 @@
     "stock": 400,
     "soldOut": false,
     "popularity": 78,
-    "images": ["/assets/evt-0004/cover.jpg"],
+    "images": ["image3.jpg"],
     "policies": {
       "age": "16+",
       "refund": "No reembolsable"
@@ -73,7 +73,7 @@
         "stock": 600,
         "soldOut": false,
         "popularity": 82,
-        "images": ["/assets/evt-0005/cover.jpg"],
+        "images": ["image4.jpg"],
         "policies": {
           "age": "12+",
           "refund": "Reembolso hasta 72h antes"
@@ -93,7 +93,7 @@
         "stock": 50000,
         "soldOut": false,
         "popularity": 98,
-        "images": ["/assets/evt-0006/cover.jpg"],
+        "images": ["image5.jpg"],
         "policies": {
           "age": "Todas las edades",
           "refund": "Evento gratuito"
@@ -113,7 +113,7 @@
         "stock": 1200,
         "soldOut": false,
         "popularity": 90,
-        "images": ["/assets/evt-0007/cover.jpg"],
+        "images": ["image7.jpg"],
         "policies": {
           "age": "10+",
           "refund": "Reembolso hasta 7 días antes"
@@ -133,7 +133,7 @@
         "stock": 2500,
         "soldOut": false,
         "popularity": 85,
-        "images": ["/assets/evt-0008/cover.jpg"],
+        "images": ["image8.jpg"],
         "policies": {
           "age": "Todas las edades",
           "refund": "Reembolso parcial hasta 5 días antes"
@@ -153,7 +153,7 @@
         "stock": 2000,
         "soldOut": false,
         "popularity": 70,
-        "images": ["/assets/evt-0009/cover.jpg"],
+        "images": ["image9.jpg"],
         "policies": {
         "age": "Todas las edades",
         "refund": "No reembolsable"
@@ -172,7 +172,7 @@
         "stock": 1500,
         "soldOut": false,
         "popularity": 65,
-        "images": ["/assets/evt-0010/cover.jpg"],
+        "images": ["image10.jpg"],
         "policies": {
         "age": "Todas las edades",
         "refund": "Evento gratuito"
