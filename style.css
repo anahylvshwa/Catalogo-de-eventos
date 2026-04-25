@@ -252,4 +252,4 @@ function ordenarPorPopularidad() {
 // ==========================
 // INIT
 // ==========================
-renderEventos(eventos);
+renderEventos(eventos); 
