@@ -1,57 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="UTF-8" />
     <title>Cartelera de Eventos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
       <article class="card">
         <div class="badge">Evento Especial</div>
-
-        <h1>Un catálogo interactivo<br />de Eventos</h1>
-
+        <h1>un catálogo interactivo<br />de Eventos</h1>
         <p class="description">
-          Podrás observar la lista de eventos y conciertos!
+          Podrás observar la ista de eventos y conciertos!
         </p>
-
         <div class="info-row">
           <div class="info-item">
             <span>Fecha</span>
             <strong>24 Marzo</strong>
           </div>
-
           <div class="info-item">
             <span>Lugar</span>
             <strong>Costa 21</strong>
           </div>
-
           <div class="info-item">
             <span>Cupos</span>
             <strong>100</strong>
           </div>
         </div>
-
-        <h3>Catálogo</h3>
-
-        <!-- GRID DE EVENTOS -->
+        <h3>Catalogo</h3>
         <div class="catalog-grid"></div>
 
-        <!-- MODAL -->
+        <!-- Modal  -->
         <div id="movieModal" class="modal hidden">
           <div class="modal-content">
             <span class="close-btn">&times;</span>
-
             <div class="modal-body">
               <div class="modal-image">
                 <img id="modalImage" src="" alt="" />
               </div>
-
               <div class="modal-details">
                 <h2 id="modalDescription"></h2>
               </div>
@@ -60,54 +47,47 @@
         </div>
       </article>
     </main>
-
-    <!-- SECCIÓN CONTACTO -->
-    <section class="contact-section">
-      <div class="contact-container">
-
-        <!-- IZQUIERDA -->
-        <div class="contact-info">
-          <span class="contact-tag">CONTACTO</span>
-
-          <h2>¿Tienes alguna consulta?</h2>
-
-          <p>
-            Escríbenos y nuestro equipo te responderá lo antes posible.
-            Resolvemos dudas sobre entradas, accesibilidad y eventos privados.
-          </p>
-
-          <div class="contact-box">
-            <p>📧 contacto@encore.live</p>
-            <small>Atención de lunes a sábado · 9:00 a 20:00 hrs</small>
-          </div>
-        </div>
-
-        <!-- FORMULARIO -->
-        <div class="contact-form">
-          <form>
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre completo" />
-
-            <label>Correo</label>
-            <input type="email" placeholder="tu@correo.com" />
-
-            <label>Consulta</label>
-            <textarea placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
-
-            <button type="submit">✈ Enviar</button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FOOTER (AHORA SÍ AL FINAL 🔥) -->
     <footer>
       <p>Copyright © 2026</p>
     </footer>
 
-    <!-- JS -->
     <script src="script.js"></script>
+    <section class="contact-section">
+  <div class="contact-container">
+
+    <!-- IZQUIERDA -->
+    <div class="contact-info">
+      <span class="contact-tag">CONTACTO</span>
+      <h2>¿Tienes alguna consulta?</h2>
+      <p>
+        Escríbenos y nuestro equipo te responderá lo antes posible.
+        Resolvemos dudas sobre entradas, accesibilidad y eventos privados.
+      </p>
+
+      <div class="contact-box">
+        <p>📧 contacto@encore.live</p>
+        <small>Atención de lunes a sábado · 9:00 a 20:00 hrs</small>
+      </div>
+    </div>
+
+    <!-- DERECHA -->
+    <div class="contact-form">
+      <form>
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre completo">
+
+        <label>Correo</label>
+        <input type="email" placeholder="tu@correo.com">
+
+        <label>Consulta</label>
+        <textarea placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+
+        <button type="submit">✈ Enviar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
 
   </body>
 </html>
