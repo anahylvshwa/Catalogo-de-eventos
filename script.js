@@ -95,7 +95,7 @@ const eventos = [
     "stock": 1200,
     "soldOut": false,
     "popularity": 90,
-    "images": ["image7.jpg"],
+    "images": ["image6.jpg"],
     "description": "Una de las obras maestras del ballet clásico."
   },
   {
@@ -111,7 +111,7 @@ const eventos = [
     "stock": 2500,
     "soldOut": false,
     "popularity": 85,
-    "images": ["image8.jpg"],
+    "images": ["image7.jpg"],
     "description": "Una cumbre sobre innovación tecnológica y futuro digital."
   },
   {
@@ -127,7 +127,7 @@ const eventos = [
     "stock": 2000,
     "soldOut": false,
     "popularity": 70,
-    "images": ["image9.jpg"],
+    "images": ["image8.jpg"],
     "description": "Un festival de jazz frente al mar Caribe."
   },
   {
@@ -143,7 +143,7 @@ const eventos = [
     "stock": 1500,
     "soldOut": false,
     "popularity": 65,
-    "images": ["image10.jpg"],
+    "images": ["image9.jpg"],
     "description": "Proyección gratuita de películas clásicas bajo las estrellas."
   }
 ];
